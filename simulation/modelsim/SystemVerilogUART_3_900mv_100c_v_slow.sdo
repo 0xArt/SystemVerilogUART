@@ -1,0 +1,158 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+
+// 
+// Device: Altera EP2AGX45CU17I3 Package UFBGA358
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP2AGX45CU17I3,
+// with speed grade 3, core voltage 0.9VmV, and temperature 100 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim-Altera (SystemVerilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "uart_tx")
+  (DATE "04/05/2019 16:00:20")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "arriaii_io_obuf")
+    (INSTANCE txSerial\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (430:430:430) (429:429:429))
+        (IOPATH i o (2305:2305:2305) (2328:2328:2328))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE clk\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (488:488:488) (573:573:573))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_and2")
+    (INSTANCE clk\~inputclkctrl.outclk_and)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH IN1 Y (354:354:354) (345:345:345))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_io_ibuf")
+    (INSTANCE txDv\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (557:557:557) (644:644:644))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE state\.IDLE\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataf (4322:4322:4322) (4380:4380:4380))
+        (IOPATH datae combout (412:412:412) (378:378:378))
+        (IOPATH dataf combout (94:94:94) (79:79:79))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE state\.IDLE)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1591:1591:1591) (1630:1630:1630))
+        (PORT d (89:89:89) (94:94:94))
+        (IOPATH (posedge clk) q (48:48:48) (48:48:48))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (81:81:81))
+      (HOLD d (posedge clk) (42:42:42))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE state\.START_BIT\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (4314:4314:4314) (4381:4381:4381))
+        (PORT dataf (247:247:247) (250:250:250))
+        (IOPATH datac combout (295:295:295) (285:285:285))
+        (IOPATH datae combout (412:412:412) (378:378:378))
+        (IOPATH dataf combout (93:93:93) (87:87:87))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE state\.START_BIT)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1591:1591:1591) (1630:1630:1630))
+        (PORT d (89:89:89) (94:94:94))
+        (IOPATH (posedge clk) q (48:48:48) (48:48:48))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (81:81:81))
+      (HOLD d (posedge clk) (42:42:42))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaii_lcell_comb")
+    (INSTANCE Selector0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (242:242:242) (254:254:254))
+        (PORT dataf (221:221:221) (225:225:225))
+        (IOPATH datac combout (295:295:295) (285:285:285))
+        (IOPATH datae combout (412:412:412) (378:378:378))
+        (IOPATH dataf combout (93:93:93) (87:87:87))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE txSerial\~reg0)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1591:1591:1591) (1630:1630:1630))
+        (PORT d (89:89:89) (94:94:94))
+        (IOPATH (posedge clk) q (48:48:48) (48:48:48))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (81:81:81))
+      (HOLD d (posedge clk) (42:42:42))
+    )
+  )
+)

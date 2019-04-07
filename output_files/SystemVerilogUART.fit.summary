@@ -1,0 +1,22 @@
+Fitter Status : Successful - Fri Apr 05 20:53:41 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : SystemVerilogUART
+Top-level Entity Name : uart_tx
+Family : Arria II GX
+Device : EP2AGX45DF29I5
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 70 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 17 / 36,100 ( < 1 % )
+Total registers : 17
+Total pins : 53 / 404 ( 13 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )

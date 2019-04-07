@@ -1,0 +1,8 @@
+
+State Machine - |uart_tx|state
+Name state.SEND_STOP_BIT state.SEND_PAYLOAD state.SEND_START_BIT state.IDLE state.DONE 
+state.IDLE 0 0 0 0 0 
+state.SEND_START_BIT 0 0 1 1 0 
+state.SEND_PAYLOAD 0 1 0 1 0 
+state.SEND_STOP_BIT 1 0 0 1 0 
+state.DONE 0 0 0 1 1 
