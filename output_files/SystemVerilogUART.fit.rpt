@@ -1,5 +1,5 @@
 Fitter report for SystemVerilogUART
-Fri Apr 05 20:53:41 2019
+Sun Apr 07 15:38:36 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +-----------------------------------+---------------------------------------------+
-; Fitter Status                     ; Successful - Fri Apr 05 20:53:41 2019       ;
+; Fitter Status                     ; Successful - Sun Apr 07 15:38:36 2019       ;
 ; Quartus Prime Version             ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                     ; SystemVerilogUART                           ;
 ; Top-level Entity Name             ; uart_tx                                     ;
@@ -168,7 +168,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1980,8 +1981,8 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/Art/Desktop/SystemVerilogUART/output_files/SystemVerilogUART.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5856 megabytes
-    Info: Processing ended: Fri Apr 05 20:53:42 2019
+    Info: Peak virtual memory: 5857 megabytes
+    Info: Processing ended: Sun Apr 07 15:38:37 2019
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:12
 
